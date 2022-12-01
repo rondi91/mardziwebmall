@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,11 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
 Route::get('/shops', function () {
-    return view('shops.index');
+    return view('home',[
+        'products'=>Product::all()->take(4)
+    ]);
+});
+Route::get('/', function () {
+    return view('shops.index',[
+        'products'=>Product::all()
+    ]);
 });
 Route::get('/carts', function () {
     return view('carts.index');

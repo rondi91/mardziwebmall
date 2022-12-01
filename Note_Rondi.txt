@@ -1,5 +1,5 @@
 alias pa="php artisan"
-alias pams="php artisan migrate:fresh --seed"
+alias pamfs="php artisan migrate:fresh --seed"
 alias pamc="php artisan make:controller"
 alias pamm="php artisan make:model"
 
