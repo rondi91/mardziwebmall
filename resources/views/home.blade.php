@@ -1,10 +1,11 @@
 @extends('layouts.main')
- {{-- <!-- header start -->
+{{-- {{ dd($products); }} --}}
+ <!-- header start -->
  @include('layouts.header')
- <!-- header end --> --}}
+ <!-- header end -->
  <!-- slider start -->
- {{-- @include('layouts.slider')
- <!-- banner3 area start --> --}}
+ @include('layouts.slider')
+ <!-- banner3 area start -->
  @include('layouts.banner3')
  <!-- banner3 area end -->
  <!-- all products area start -->
