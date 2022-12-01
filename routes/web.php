@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
@@ -17,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('shops.index',[
-        'products'=>Product::all()
+        'products'=>Product::take(8)->get()
     ]);
 });
 
@@ -30,5 +31,29 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
+// cart 
+Route::get('/addCart/{product}', [CartController::class, 'addCart'])->name('cart.add')->middleware('auth');
+Route::get('cart', [CartController::class, 'cartlist'])->name('cart.list')->middleware('auth');
+Route::get('cart/update/{itemId}', [CartController::class, 'updateCart'])->name('cart.update');
+Route::post('cart/destroy', [CartController::class, 'destroy'])->name('cart.remove');
+// Route::get('cart/destroy/id', [CartController::class, 'destroy'])->name('cart.remove');
+Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear');
+Route::get('/cart/checkout', [CartController::class, 'checkout'])->name('cart.checkout');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 require __DIR__.'/auth.php';
