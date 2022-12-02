@@ -69,3 +69,8 @@ Route::get('/cart/checkout', [CartController::class, 'checkout'])->name('cart.ch
 
 
 require __DIR__.'/auth.php';
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
