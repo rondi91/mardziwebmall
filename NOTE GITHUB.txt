@@ -54,6 +54,7 @@ alias gcm="git checkout master"
 alias gc="git checkout "
 alias graph="git log --all --decorate --oneline --graph"
 alias gmit="git commit -m"
+alias gm="git merge"
 
 
 

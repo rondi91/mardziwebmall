@@ -1,0 +1,26 @@
+*   [33mc08c1f5[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Merge branch 'main' of https://github.com/rondi91/mardziwebmall
+[31m|[m[32m\[m  
+[31m|[m *   [33m02e4585[m Merge pull request #1 from rondi91/prepareprodukdb
+[31m|[m [33m|[m[34m\[m  
+* [33m|[m [34m|[m [33m80cffe3[m composser update
+[34m|[m [33m|[m [34m|[m * [33m7fdae0d[m[33m ([m[1;31morigin/adminvoyager[m[33m, [m[1;32madminvoyager[m[33m)[m add voyager admin
+[34m|[m [33m|[m [34m|[m * [33mb6dee45[m manage read order
+[34m|[m [33m|[m [34m|[m * [33m012302b[m php artisan voyager:install --with-dummy
+[34m|[m [33m|[m [34m|[m * [33m07517c6[m php artisan voyager:install
+[34m|[m [33m|[m [34m|[m * [33m35d95af[m composer require tcg/voyager
+[34m|[m [33m|[m[34m_[m[34m|[m[34m/[m  
+[34m|[m[34m/[m[33m|[m [34m|[m   
+* [33m|[m [34m|[m [33m6ba6471[m[33m ([m[1;31morigin/authbris[m[33m, [m[1;32mauthbris[m[33m)[m add cart ,place order & order item
+* [33m|[m [34m|[m [33m17b72ed[m add card darryldecode
+* [33m|[m [34m|[m [33mfffca79[m instal auth breez 2
+* [33m|[m [34m|[m [33mfdda8e8[m install breez 2
+* [33m|[m [34m|[m [33m73209be[m install breez
+[34m|[m [33m|[m[34m/[m  
+[34m|[m[34m/[m[33m|[m   
+* [33m|[m [33m9b2c33f[m[33m ([m[1;31morigin/prepareprodukdb[m[33m, [m[1;32mprepareprodukdb[m[33m)[m add product db,make lay out
+* [33m|[m [33m6457260[m make modal produk -a
+[33m|[m[33m/[m  
+* [33me94dbca[m[33m ([m[1;31morigin/settfrontweb[m[33m, [m[1;32msettfrontweb[m[33m)[m add home cart shop pages
+* [33m02479c3[m add asset js css dan home
+* [33ma0641c2[m remove git ignore
+* [33mf0c1da9[m install laravel first

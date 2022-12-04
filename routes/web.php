@@ -22,6 +22,11 @@ Route::get('/', function () {
         'products'=>Product::take(8)->get()
     ]);
 })->name('home');
+Route::get('/product', function () {
+    $total = Product::all()->sum('price');
+    return $total;
+    
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -68,4 +73,9 @@ Route::get('/cart/checkout', [CartController::class, 'checkout'])->name('cart.ch
 
 
 
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
 require __DIR__.'/auth.php';
+
+
