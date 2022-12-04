@@ -555,6 +555,13 @@ class ComposerStaticInitc591be3a928106ff222246baa24766e3
     );
 
     public static $prefixesPsr0 = array (
+        'O' => 
+        array (
+            'Orangehill\\Iseed' => 
+            array (
+                0 => __DIR__ . '/..' . '/orangehill/iseed/src',
+            ),
+        ),
         'M' => 
         array (
             'Mockery' => 
@@ -775,6 +782,7 @@ class ComposerStaticInitc591be3a928106ff222246baa24766e3
         'Database\\Seeders\\RolesTableSeeder' => __DIR__ . '/../..' . '/database/seeders/RolesTableSeeder.php',
         'Database\\Seeders\\SettingsTableSeeder' => __DIR__ . '/../..' . '/database/seeders/SettingsTableSeeder.php',
         'Database\\Seeders\\TranslationsTableSeeder' => __DIR__ . '/../..' . '/database/seeders/TranslationsTableSeeder.php',
+        'Database\\Seeders\\UserRolesTableSeeder' => __DIR__ . '/../..' . '/database/seeders/UserRolesTableSeeder.php',
         'Database\\Seeders\\UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeders/UsersTableSeeder.php',
         'Database\\Seeders\\VoyagerDatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/VoyagerDatabaseSeeder.php',
         'Database\\Seeders\\VoyagerDummyDatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/VoyagerDummyDatabaseSeeder.php',
@@ -3956,6 +3964,11 @@ class ComposerStaticInitc591be3a928106ff222246baa24766e3
         'NunoMaduro\\Collision\\Provider' => __DIR__ . '/..' . '/nunomaduro/collision/src/Provider.php',
         'NunoMaduro\\Collision\\SolutionsRepositories\\NullSolutionsRepository' => __DIR__ . '/..' . '/nunomaduro/collision/src/SolutionsRepositories/NullSolutionsRepository.php',
         'NunoMaduro\\Collision\\Writer' => __DIR__ . '/..' . '/nunomaduro/collision/src/Writer.php',
+        'Orangehill\\Iseed\\Facades\\Iseed' => __DIR__ . '/..' . '/orangehill/iseed/src/Orangehill/Iseed/Facades/Iseed.php',
+        'Orangehill\\Iseed\\Iseed' => __DIR__ . '/..' . '/orangehill/iseed/src/Orangehill/Iseed/Iseed.php',
+        'Orangehill\\Iseed\\IseedCommand' => __DIR__ . '/..' . '/orangehill/iseed/src/Orangehill/Iseed/IseedCommand.php',
+        'Orangehill\\Iseed\\IseedServiceProvider' => __DIR__ . '/..' . '/orangehill/iseed/src/Orangehill/Iseed/IseedServiceProvider.php',
+        'Orangehill\\Iseed\\TableNotFoundException' => __DIR__ . '/..' . '/orangehill/iseed/src/Orangehill/Iseed/Exceptions.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',

@@ -6,3 +6,8 @@ alias pamm="php artisan make:model"
 
 
 php artisan vendor:publish --provider="Darryldecode\Cart\CartServiceProvider" --tag="config"
+
+
+
+composer require orangehill/iseed
+php artisan iseed data_types,data_rows,categories,posts,pages,menus,menu_items,roles,users,user_roles,permissions,permission_role,settings

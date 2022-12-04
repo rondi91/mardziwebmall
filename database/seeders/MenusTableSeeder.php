@@ -3,19 +3,31 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use TCG\Voyager\Models\Menu;
 
 class MenusTableSeeder extends Seeder
 {
+
     /**
-     * Auto generated seed file.
+     * Auto generated seed file
      *
      * @return void
      */
     public function run()
     {
-        Menu::firstOrCreate([
-            'name' => 'admin',
-        ]);
+        
+
+        \DB::table('menus')->delete();
+        
+        \DB::table('menus')->insert(array (
+            0 => 
+            array (
+                'created_at' => '2022-12-02 21:47:55',
+                'id' => 1,
+                'name' => 'admin',
+                'updated_at' => '2022-12-02 21:47:55',
+            ),
+        ));
+        
+        
     }
 }
